@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { Button, View, Text } from 'react-native';
 
-function DetailsScreen({ navigation }) {
+function ProductDetailsScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-      <Button
-        title="Go to Details... again"
-        onPress={() => navigation.push('Details')}
-      />
+      <Text>Product Details Screen</Text>
+      
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
       <Button
@@ -19,4 +16,4 @@ function DetailsScreen({ navigation }) {
   );
 }
 
-export default DetailsScreen;
+export default ProductDetailsScreen;
